@@ -98,6 +98,7 @@ private struct WindowAppearanceSync: NSViewRepresentable {
     }
 }
 
+@MainActor
 final class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ notification: Notification) {
         NSApp.setActivationPolicy(.regular)
@@ -120,7 +121,8 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         }
 
         guard remainingAttempts > 0 else { return }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.12) { [weak self] in
+        Task { @MainActor [weak self] in
+            try? await Task.sleep(for: .milliseconds(120))
             self?.focusApplicationWindow(remainingAttempts: remainingAttempts - 1)
         }
     }

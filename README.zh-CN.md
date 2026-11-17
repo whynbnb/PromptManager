@@ -57,6 +57,11 @@ Prompt Manager 是一个基于 macOS SwiftUI 的提示词管理工具，支持�
 
 修改应用元信息时，需要保持 `project.yml` 和 `PromptManager.xcodeproj/project.pbxproj` 同步。
 
+## 环境要求
+
+- macOS 15.0 及以上
+- Xcode 16 及以上（Swift 6）
+
 ## 运行方式
 
 ### 推荐方式：Xcode

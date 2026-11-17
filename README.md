@@ -57,6 +57,11 @@ Prompt Manager is a macOS SwiftUI app for organizing prompts with custom types, 
 
 Keep `project.yml` and `PromptManager.xcodeproj/project.pbxproj` in sync when changing app metadata.
 
+## Requirements
+
+- macOS 15.0 or later
+- Xcode 16 or later (Swift 6)
+
 ## Run The App
 
 ### Recommended: Xcode

@@ -5,11 +5,14 @@ options:
 configs:
   Debug: debug
   Release: release
+settings:
+  base:
+    SWIFT_VERSION: 6.0
 targets:
   PromptManager:
     type: application
     platform: macOS
-    deploymentTarget: "14.0"
+    deploymentTarget: "15.0"
     sources:
       - path: Sources/PromptManager
       - path: PromptManager
@@ -17,14 +20,11 @@ targets:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: me.whynbnb.PromptManager
         PRODUCT_NAME: Prompt Manager
-        SWIFT_VERSION: 5.9
         GENERATE_INFOPLIST_FILE: NO
         INFOPLIST_FILE: PromptManager/Info.plist
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         CODE_SIGN_STYLE: Automatic
         CURRENT_PROJECT_VERSION: 3
         MARKETING_VERSION: 1.2
-    info:
-      path: PromptManager/Info.plist
     scheme:
       testTargets: []

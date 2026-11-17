@@ -46,8 +46,8 @@ Prompt Manager is a macOS SwiftUI app for organizing prompts with custom types, 
 ## App Metadata
 
 - Bundle identifier: `me.whynbnb.PromptManager`
-- Developer: `WHYBBE`
-- Repository: <https://github.com/WHYBBE/PromptManager>
+- Developer: `whynbnb`
+- Repository: <https://github.com/whynbnb/PromptManager>
 - License: MIT License
 
 `PromptManager/Info.plist` reads version values from Xcode build settings:

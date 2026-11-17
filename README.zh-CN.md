@@ -46,8 +46,8 @@ Prompt Manager 是一个基于 macOS SwiftUI 的提示词管理工具，支持�
 ## 应用信息
 
 - Bundle Identifier：`me.whynbnb.PromptManager`
-- 开发者：`WHYBBE`
-- 仓库：<https://github.com/WHYBBE/PromptManager>
+- 开发者：`whynbnb`
+- 仓库：<https://github.com/whynbnb/PromptManager>
 - 许可证：MIT License
 
 `PromptManager/Info.plist` 会从 Xcode build settings 中读取版本号：

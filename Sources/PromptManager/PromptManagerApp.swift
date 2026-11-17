@@ -34,10 +34,10 @@ struct PromptManager: App {
 
     private func showAboutPanel() {
         let isEnglish = store.appLanguage == .english
-        let repositoryURLString = "https://github.com/WHYBBE/PromptManager"
+        let repositoryURLString = "https://github.com/whynbnb/PromptManager"
         let credits = isEnglish
-            ? "Developer: WHYBBE\nRepository: \(repositoryURLString)\nLicense: MIT License"
-            : "开发者：WHYBBE\n仓库：\(repositoryURLString)\n许可证：MIT License"
+            ? "Developer: whynbnb\nRepository: \(repositoryURLString)\nLicense: MIT License"
+            : "开发者：whynbnb\n仓库：\(repositoryURLString)\n许可证：MIT License"
 
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.alignment = .center
